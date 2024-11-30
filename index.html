@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+</head>
+<body>
+    <h1>Personal Details Form</h1>
+    <form action="#" method="POST">
+        <!-- First Name -->
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+        <br><br>
+
+        <!-- Middle Name -->
+        <label for="middlename">Middle Name:</label>
+        <input type="text" id="middlename" name="middlename" placeholder="Enter your middle name">
+        <br><br>
+
+        <!-- Last Name -->
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+        <br><br>
+
+        <!-- Course -->
+        <label for="salutation">Course:</label>
+        <select id="salutation" name="Course" required>
+            <option value="Course">Course</option>
+            <option value="B.tech">B.tech</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="MBA">MBA</option>
+            <option value="M.tech">M.tech</option>
+        </select>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">DOB:</label>
+        <input type="datetime-local" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91" pattern="[+]91[0-9]{10}" required>
+        <br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address" required></textarea>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <!-- Re-type Password -->
+        <label for="repassword">Re-type Password:</label>
+        <input type="password" id="repassword" name="repassword" placeholder="Re-enter your password" required>
+        <br><br>
+
+        <!-- Agree to Terms -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Agree to terms and conditions</label>
+        <br><br>
+
+        <!-- File Upload -->
+        <label for="file">Choose File:</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf">
+        <br><br>
+
+        <!-- Color Picker -->
+        <label for="color">Choose Color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+
+        <button type="reset">Reset</button>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
